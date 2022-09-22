@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive pricing component</title>
+
+    <link rel="stylesheet" href="assets/scss/main.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="/assets/images/pattern-circles.svg" alt="" />
+      <h1 class="header__title">Simple, traffic-based pricing</h1>
+      <h2 class="header__description">
+        Sign-up for our 30-day trial. No credit card required.
+      </h2>
+    </header>
+
+    <main class="container">
+      <div class="container__subcription subscription">
+        <h3 class="subscription__title">
+          <span id="numberPages"></span>Pageviews
+        </h3>
+        <div class="slide">
+          <div class="subscription__slidebar slidebar">
+            <input
+              class="slidebar__input"
+              type="range"
+              id="range"
+              min="0"
+              max="4"
+              value="2"
+            />
+          </div>
+          <div class="slidebar_slider"></div>
+        </div>
+        <div class="subscription__price price">
+          <p><span class="subscription__price--dollars"></span>/month</p>
+        </div>
+        <div class="subscription__toggle toggle">
+          <p class="toggle__month">Monthly Billing</p>
+
+          <label for="switch" class="toggle__switch">
+            <input
+              type="checkbox"
+              id="switch"
+              class="toggle__switch__checkbox"
+            />
+            <span class="toggle__switch__slider round"></span>
+          </label>
+
+          <p class="toggle__year">
+            Yearly Billing <span class="discount">-25%</span>
+          </p>
+        </div>
+      </div>
+      <div class="container__list list">
+        <p class="list__websites">Unlimited websites</p>
+        <p class="list__data">100% data ownership</p>
+        <p class="list__email">Email reports</p>
+
+        <button class="list__btn">Start my trial</button>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Tiyyo</a>.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
