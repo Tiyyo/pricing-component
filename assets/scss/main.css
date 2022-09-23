@@ -61,7 +61,7 @@ body {
   font-size: 1.5rem;
   background-color: hsl(230deg, 100%, 99%);
   min-height: 100vh;
-  background: url("/assets/images/bg-pattern.svg") center/cover no-repeat;
+  background: url("../images/bg-pattern.svg") center/cover no-repeat;
   background-position: -10vw -60vh;
   background-color: hsl(230deg, 100%, 99%);
 }
@@ -202,7 +202,7 @@ input[type=range].slidebar__input::-webkit-slider-thumb {
   border: none;
   border-radius: 1500px;
   background-color: hsl(174deg, 86%, 45%);
-  background-image: url("/assets/images/icon-slider.svg");
+  background-image: url("../images/icon-slider.svg");
   background-position: center;
   background-repeat: no-repeat;
 }

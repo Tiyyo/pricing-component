@@ -92,9 +92,10 @@ input[type=range].slidebar__input::-webkit-slider-thumb{
     border: none;
     border-radius: 1500px;
     background-color: $strong-cyan;
-    background-image: url('/assets/images/icon-slider.svg');
+    background-image: url('../images/icon-slider.svg');
     background-position: center;
     background-repeat: no-repeat;
+    // box-shadow: 2px 2px 1px 5px $strong-cyan;
 
     &:hover  {
         background-color: hsl(174, 86%, 30%);
